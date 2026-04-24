@@ -5,21 +5,21 @@
 class Nucleus < Formula
   desc "Profile-aware MCP gateway — one connector, many accounts"
   homepage "https://github.com/doramirdor/nucleusmcp"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.3/nucleus_0.1.3_darwin_amd64.tar.gz"
-      sha256 "0708b3d73a2b9db03ff59a7dae2934249ace40f358fa3e867a3425df0f7b5cb9"
+      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.4/nucleus_0.1.4_darwin_amd64.tar.gz"
+      sha256 "a3ed758117104b9dbbd99ca9154957c68790550cdcf42830ff36e069aad4d92f"
 
       define_method(:install) do
         bin.install "nucleus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.3/nucleus_0.1.3_darwin_arm64.tar.gz"
-      sha256 "a221ca3cdc397ceebfa5f955ff2350dbd07c612db2b11ae31906fbcb176d0cec"
+      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.4/nucleus_0.1.4_darwin_arm64.tar.gz"
+      sha256 "6c2d54e39354caf3a33328b9028e3d96b14eb3b4e1d36927b31b08882029db93"
 
       define_method(:install) do
         bin.install "nucleus"
@@ -29,15 +29,15 @@ class Nucleus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.3/nucleus_0.1.3_linux_amd64.tar.gz"
-      sha256 "cb9c4df2a8f010d840836df61be94d09c9f72bbd9d77e52018e4caab205bb950"
+      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.4/nucleus_0.1.4_linux_amd64.tar.gz"
+      sha256 "0de4146ec324da62ccce6bb4667993cd6fe5aaf5d71fee8649e57e96b8bf9ace"
       define_method(:install) do
         bin.install "nucleus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.3/nucleus_0.1.3_linux_arm64.tar.gz"
-      sha256 "0da4269d5a096d2145a12f4acfe0c131b1c35e546e3b76d8ecd728872ca12f2d"
+      url "https://github.com/doramirdor/nucleusmcp/releases/download/v0.1.4/nucleus_0.1.4_linux_arm64.tar.gz"
+      sha256 "9c3af7ce62acc97d5bc270c06facca4c9b38b895ad784401655f68d8a9d39ac4"
       define_method(:install) do
         bin.install "nucleus"
       end
